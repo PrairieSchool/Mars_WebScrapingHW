@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>_mission_to_Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>_mission_to_Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">update</a></p>
+    </div>
+
+    <!-- Mars Data -->
+    <div class="row" id="mars_data_tempName">
+      <div class="col-md-6">
+        <h3 class="heading">Latest News: </h3>
+        <h5 class=" ">{{Mars_Mongo_Data.Head}}</h5>
+        <p class=" ">{{Mars_Mongo_Data.Teaser}} </p>
+        <img class=" " src="{{Mars_Mongo_Data.Feat}}"width="450">
+        <!-- height="633" -->
+      </div>
+      <div class="col-md-6">
+          <h3 class="heading">Today's Weather:</h3>
+          <p class=" ">{{Mars_Mongo_Data.Weather}}<p>
+          <h3 class="heading">Mars Facts:</h3>
+          <div>{{Mars_Mongo_Data.Facts | safe }}</div>
+      </div>
+    </div>>div class="row" id="mars_data_tempName">
+        <div class="col-md-6">
+            <h3 class="heading">{{Mars_Mongo_Data.HemiImages[0].hemiTitle}}</h3>
+            <img class=" " src="{{Mars_Mongo_Data.HemiImages[0].hemiImage}}"width="475" height="475">
+            <h3 class="heading">{{Mars_Mongo_Data.HemiImages[1].hemiTitle}}</h3>
+            <img class=" " src="{{Mars_Mongo_Data.HemiImages[1].hemiImage}}"width="475" height="475">
+        </div>
+        <div class="col-md-6">
+            <h3 class="heading">{{Mars_Mongo_Data.HemiImages[2].hemiTitle}}</h3>
+            <img class=" " src="{{Mars_Mongo_Data.HemiImages[2].hemiImage}}"width="475" height="475">
+            <h3 class="heading">{{Mars_Mongo_Data.HemiImages[3].hemiTitle}}</h3>
+            <img class=" " src="{{Mars_Mongo_Data.HemiImages[3].hemiImage}}"width="475" height="475">
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
+

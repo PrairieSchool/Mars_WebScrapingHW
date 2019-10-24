@@ -1,4 +1,7 @@
-
+    # To add a new cell, type '#%%'
+    # To add a new markdown cell, type '#%% [markdown]'
+    #%% [markdown]
+    # <h2>Read Headline & Teaser with BeautifulSoup</h2>
 def scrape():
     #%%
     from bs4 import BeautifulSoup
@@ -149,7 +152,7 @@ def scrape():
         }
 
     return MarsMasterDictionary
-    # print(MarsMasterDictionary)
+    #print(MarsMasterDictionary)
     #%%
 
 
